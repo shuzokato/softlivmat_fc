@@ -79,7 +79,7 @@ function pickUpTweets() {
   var list_tweets = [];
   for (var i = 0, il = cells.length; i < il; i++ ) {
     var text_date_sheet = cells[i][2]
-    var text_today = Utilities.formatDate(new Date(), "Asia/Tokyo", "dd.MM.yyyy")
+    var text_today = Utilities.formatDate(new Date(), "Asia/Tokyo", "yyyy/MM/dd")
     if (text_date_sheet = text_today){
       list_tweets.push(cells[i])
     }

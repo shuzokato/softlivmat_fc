@@ -53,12 +53,9 @@ function getService() {
       .setConsumerKey(CONSUMER_KEY) 
       .setConsumerSecret(CONSUMER_SECRET) 
       .setAccessToken(TOKEN, TOKEN_SECRET) 
-
-      // oAuthエンドポイントURL
       .setAccessTokenUrl('https://api.twitter.com/oauth/access_token')
       .setRequestTokenUrl('https://api.twitter.com/oauth/request_token')
       .setAuthorizationUrl('https://api.twitter.com/oauth/authorize')
-
       .setCallbackFunction('authCallback') 
 }
 

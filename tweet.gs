@@ -14,15 +14,16 @@ function main() {
   for (var i = 0, il = tweets.length; i < il; i++ ) {
     var tweet = tweets[i][0] + ' ' + tweets[i][1]
       if (service.hasAccess()) {
-        var url = 'https://api.twitter.com/1.1/statuses/update.json';
+        var url = 'https://api.twitter.com/2/tweets';
         var payload = {
-          status: tweet
+          text: tweet
         };
         try{
           var response = service.fetch(url, {
             method: 'post',
-            payload: payload,
-            muteHttpExceptions: true
+            payload: JSON.stringify(payload),
+            muteHttpExceptions: true,
+            contentType: 'application/json'
           });
       }catch(e) {
         Logger.log('Error:')

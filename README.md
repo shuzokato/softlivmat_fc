@@ -6,11 +6,11 @@ The codes are implemented in Google app script. All article data is stored in Go
 Currently, we cover the following journals and preprints.
 * Physical Review (Letters, E, Research, X, X Life)
 * PNAS (, Nexus)
-* Nature (, Communications, Physics, Cell Biology, Materials, Communications Physics)
+* Nature (, Communications, Physics, Cell Biology, Materials, Nanotechnology, Communications Physics)
 * Science (, Advances)
 * Elife
 * Soft Matter
-* Arxiv (cond-mat.soft, physics.bio-ph)
+* Arxiv (cond-mat.soft, physics.bio-ph, cond-mat.stat-mech)
 * bioRxiv (Biophysics)
 
 Currently database is updated manually but we are considering fully automating this process in the future. We welcome volunteers to help with the improvements.
